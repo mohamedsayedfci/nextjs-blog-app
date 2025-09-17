@@ -1,4 +1,4 @@
-// File: C:\Users\Mohamed\Downloads\Compressed\nextjs-jsonplaceholder_latest\app\layout.tsx
+// File: C:\Users\Mohamed\next\next-tailwind-blog\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

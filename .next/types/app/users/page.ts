@@ -1,4 +1,4 @@
-// File: C:\Users\Mohamed\Downloads\Compressed\nextjs-jsonplaceholder_latest\app\users\page.tsx
+// File: C:\Users\Mohamed\next\next-tailwind-blog\app\users\page.tsx
 import * as entry from '../../../../app/users/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

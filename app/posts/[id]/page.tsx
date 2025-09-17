@@ -2,9 +2,8 @@ import AddCommentForm from '../../../components/AddCommentForm'
 import CommentList from '../../../components/CommentList'
 import { api } from '../../../lib/api'
 
-type Props = { params: { id: string } }
 
-export default async function PostDetail({ params }: Props) {
+export default async function PostDetail({ params }: { params: any }) {
   const id = Number(params.id)
   const post = await api.posts.get(id)
   const comments = await api.posts.comments(id)

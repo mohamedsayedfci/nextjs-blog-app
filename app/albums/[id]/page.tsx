@@ -1,9 +1,8 @@
 import { api } from '../../../lib/api'
 import PhotoCard from '../../../components/PhotoCard'
 
-type Props = { params: { id: string } }
 
-export default async function AlbumDetail({ params }: Props) {
+export default async function AlbumDetail({ params }: { params: any }) {
   const id = Number(params.id)
   const album = await api.albums.get(id)
   const photos = await api.albums.photos(id)

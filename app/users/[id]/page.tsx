@@ -3,9 +3,8 @@ import TodoCard from "../../../components/TodoCard";
 import { api } from "../../../lib/api";
 import { Mail, Phone, Globe, Building2, MapPin } from "lucide-react";
 
-type Props = { params: { id: string } };
 
-export default async function UserDetail({ params }: Props) {
+export default async function UserDetail({ params }: { params: any }) {
   const id = await Number(params.id);
   const user = await api.users.get(id);
   const posts = await api.users.posts(id);
